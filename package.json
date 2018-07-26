@@ -2,10 +2,11 @@
   "name": "@edx/frontend-cookiecutter-library",
   "version": "0.0.0-development",
   "description": "Cookiecutter for creating new frontend libraries",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .js --ext .jsx ."
+    "build": "NODE_ENV=production BABEL_ENV=production webpack --config webpack.config.js",
+    "lint": "eslint --ext .js --ext .jsx .",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,14 @@
   },
   "homepage": "https://github.com/edx/frontend-cookiecutter-library#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^5.2.0",
-    "eslint-config-edx": "^4.0.4"
-  }
+    "eslint-config-edx": "^4.0.4",
+    "jest": "23.4.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {}
 }
