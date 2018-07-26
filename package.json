@@ -1,0 +1,19 @@
+{
+  "name": "@edx/frontend-cookiecutter-library",
+  "version": "0.0.0-development",
+  "description": "Cookiecutter for creating new frontend libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edx/frontend-cookiecutter-library.git"
+  },
+  "author": "edX",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/edx/frontend-cookiecutter-library/issues"
+  },
+  "homepage": "https://github.com/edx/frontend-cookiecutter-library#readme"
+}
